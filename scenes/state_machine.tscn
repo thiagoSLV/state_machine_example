@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://kv4ksgti8rw"]
+
+[ext_resource type="Script" path="res://scripts/states/StateMachine.cs" id="1_0amqw"]
+[ext_resource type="Script" path="res://scripts/states/WalkState.cs" id="2_woxab"]
+[ext_resource type="Script" path="res://scripts/states/IdleState.cs" id="3_rjwb5"]
+[ext_resource type="Script" path="res://scripts/states/JumpState.cs" id="4_y0hdd"]
+[ext_resource type="Script" path="res://scripts/states/FallState.cs" id="5_0wdio"]
+[ext_resource type="Script" path="res://scripts/states/HoverState.cs" id="6_4d8ij"]
+
+[node name="StateMachine" type="Node"]
+script = ExtResource("1_0amqw")
+
+[node name="WalkState" type="Node" parent="."]
+script = ExtResource("2_woxab")
+
+[node name="IdleState" type="Node" parent="."]
+script = ExtResource("3_rjwb5")
+
+[node name="JumpState" type="Node" parent="."]
+script = ExtResource("4_y0hdd")
+
+[node name="FallState" type="Node" parent="."]
+script = ExtResource("5_0wdio")
+
+[node name="HoverState" type="Node" parent="."]
+script = ExtResource("6_4d8ij")
